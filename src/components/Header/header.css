@@ -1,0 +1,19 @@
+.navbar-admin .navbar-brand {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #444;
+}
+
+@media(min-width: 1200px) {
+    .navbar-admin .navbar-brand {
+        margin-left: 8px;
+    }
+}
+
+@media(min-width: 1400px) {
+    .navbar-admin {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

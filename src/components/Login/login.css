@@ -1,0 +1,54 @@
+.login-wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em 1em;
+    background-color: rgba(100, 100, 100, 0.1);
+}
+
+.login-wrapper .card {
+    width: 100%;
+    max-width: 420px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.login-wrapper .card .user-icon {
+    text-align: center;
+    font-size: 6em;
+    color: #4d88ff;
+}
+
+.login-wrapper .card .h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.login-wrapper .card .form-label {
+    color: #444;
+    font-weight: 500;
+}
+
+.login-wrapper .card .form-control,
+.login-wrapper .card .form-control:focus {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    color: #333;
+    padding: 10px;
+    border-color: #999;
+    border-bottom-color: #4d88ff;
+    border-bottom-width: 4px;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.login-wrapper .card .btn {
+    width: 100%;
+}

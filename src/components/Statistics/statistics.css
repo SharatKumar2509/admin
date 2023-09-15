@@ -1,0 +1,18 @@
+.admin-stats .form-control {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    color: #444;
+    text-align: center;
+}
+
+.admin-stats .label {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #6600FF;
+    text-align: center;
+    margin-top: 10px;
+}

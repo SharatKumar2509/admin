@@ -1,0 +1,31 @@
+.sidenav .nav-item .nav-link {
+	background-color: rgba(255, 255, 255, 0.1);
+	color: white;
+	padding: 10px 15px;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	justify-content: left;
+}
+
+.sidenav .nav-item .nav-link i {
+	width: 35px;
+}
+
+#offcanvasContent .sidenav .nav-item .nav-link {
+	background-color: rgba(0, 0, 0, 0.1);
+	color: #333;
+}
+
+@media(min-width: 1200px) {
+	.custom-col-left {
+		width: 22%;
+		height: 100vh;
+		overflow: auto;
+	}
+
+	.custom-col-right {
+		width: 78%;
+		height: 100vh;
+		overflow: auto;
+	}
+}

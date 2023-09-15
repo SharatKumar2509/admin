@@ -1,0 +1,34 @@
+.account-card {
+    box-shadow: 0 0.5rem 1rem rgb(0, 0, 0, .3);
+}
+
+.account-card .h4 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #444;
+}
+
+.account-card .form-label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #454545;
+}
+
+.account-card .form-control,
+.account-card .form-select {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    color: #333;
+    border-radius: 0;
+    border-bottom: 2px solid #999;
+}
+
+.account-card .btn {
+    font-size: 0.9em;
+    padding: 6px 15px;
+    min-width: 100px;
+    border-width: 2px;
+}
