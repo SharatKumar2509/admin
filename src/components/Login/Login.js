@@ -31,7 +31,7 @@ export class Login extends Component {
                     }
                     else {
                         localStorage.setItem("isLoggedIn", true);
-                        window.location = "/admin/blogs";
+                        window.location = "/blogs";
                     }
                 })
                 .catch(err => {

@@ -200,7 +200,7 @@ export class Blogs extends Component {
                                                             <td>{moment(this.state.blogs[i].created_on).format("YYYY-MM-DD kk:mm:ss")}</td>
                                                             <td>
                                                                 {/* <button className="btn btn-primary me-2 mb-2 mb-md-0" type="button" data-bs-toggle="collapse" data-bs-target={"#collapse" + i}><i className="fas fa-eye"></i>&nbsp;&nbsp;View</button> */}
-                                                                <a href={"/blogs/"+this.state.blogs[i].path} className="btn btn-primary me-2 mb-2" target="_blank" rel="noreferrer noopener"><i className="fas fa-eye"></i>&nbsp;&nbsp;View</a>
+                                                                <a href={"https://www.overninja.com/Blogs/"+this.state.blogs[i].path} className="btn btn-primary me-2 mb-2" target="_blank" rel="noreferrer noopener"><i className="fas fa-eye"></i>&nbsp;&nbsp;View</a>
                                                                 <button className="btn btn-success me-2 mb-2" value={this.state.blogs[i].path} onClick={this.editOpen}><i className="fas fa-edit"></i>&nbsp;&nbsp;Edit</button>
                                                                 <button className="btn btn-danger" value={this.state.blogs[i].id} onClick={this.deleteblog}><i className="fas fa-trash"></i>&nbsp;&nbsp;Delete</button>
                                                             </td>

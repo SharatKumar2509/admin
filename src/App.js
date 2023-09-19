@@ -17,20 +17,20 @@ import Login from './components/Login/Login';
 function ProtectedRoute() {
 	let isLoggedIn = localStorage.getItem("isLoggedIn");
 	return (
-		isLoggedIn !== "true" ? <Navigate to="/admin/login" /> : <Outlet />
+		isLoggedIn !== "true" ? <Navigate to="/login" /> : <Outlet />
 	)
 }
 
 function UnprotectedRoute() {
 	let isLoggedIn = localStorage.getItem("isLoggedIn");
 	return (
-		isLoggedIn === "true" ? <Navigate to="/admin/blogs" /> : <Outlet />
+		isLoggedIn === "true" ? <Navigate to="/blogs" /> : <Outlet />
 	)
 }
 
 function RedirectRoute() {
 	return (
-		<Navigate to="/admin/login" />
+		<Navigate to="/login" />
 	)
 }
 
@@ -40,16 +40,16 @@ export default class App extends Component {
 			<>
 				<BrowserRouter>
 					<Routes>
-						<Route path="/admin" element={<RedirectRoute />} />
+						<Route path="/" element={<RedirectRoute />} />
 						<Route element={<UnprotectedRoute />}>
-							<Route path="/admin/login" element={<Login />} />
+							<Route path="/login" element={<Login />} />
 						</Route>
 						<Route element={<ProtectedRoute />}>
-							<Route path="/admin/blogs" element={<Blogs />} />
-							<Route path="/admin/portfolio" element={<Portfolio />} />
-							<Route path="/admin/statistics" element={<Statistics />} />
-							<Route path="/admin/testimonials" element={<Testimonials />} />
-							<Route path="/admin/account" element={<Account />} />
+							<Route path="/blogs" element={<Blogs />} />
+							<Route path="/case-studies" element={<Portfolio />} />
+							<Route path="/statistics" element={<Statistics />} />
+							<Route path="/testimonials" element={<Testimonials />} />
+							<Route path="/account" element={<Account />} />
 						</Route>
 						{/* <Route path="*" element={<NotFound />} /> */}
 					</Routes>

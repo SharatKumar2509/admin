@@ -9,15 +9,15 @@ export class Header extends Component {
                 <div className="container-fluid">
                     <div className="navbar-brand" href="/">
                         {
-                            (window.location.pathname === "/admin/inquiry") ? "Inquiry"
-                                : (window.location.pathname === "/admin/subscribers") ? "Subscribers"
-                                    : (window.location.pathname === "/admin/applications") ? "Job Applications"
-                                        : (window.location.pathname === "/admin/posts") ? "Job Posts"
-                                            : (window.location.pathname === "/admin/portfolio") ? "Portfolio"
-                                                : (window.location.pathname === "/admin/blogs") ? "Blogs"
-                                                    : (window.location.pathname === "/admin/statistics") ? "Statistics"
-                                                        : (window.location.pathname === "/admin/testimonials") ? "Testimonials"
-                                                            : (window.location.pathname === "/admin/account") ? "Admin Account"
+                            (window.location.pathname === "/inquiry") ? "Inquiry"
+                                : (window.location.pathname === "/subscribers") ? "Subscribers"
+                                    : (window.location.pathname === "/applications") ? "Job Applications"
+                                        : (window.location.pathname === "/posts") ? "Job Posts"
+                                            : (window.location.pathname === "/case-studies") ? "Case Studies"
+                                                : (window.location.pathname === "/blogs") ? "Blogs"
+                                                    : (window.location.pathname === "/statistics") ? "Statistics"
+                                                        : (window.location.pathname === "/testimonials") ? "Testimonials"
+                                                            : (window.location.pathname === "/account") ? "Admin Account"
                                                                 : "Admin Dashboard"
                         }
                     </div>

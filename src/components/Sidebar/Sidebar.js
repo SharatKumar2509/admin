@@ -12,7 +12,7 @@ export class Sidebar extends Component {
     logout(event) {
         event.preventDefault();
         localStorage.removeItem('isLoggedIn');
-        window.location = "/admin/login";
+        window.location = "/login";
     }
 
     render() {
@@ -22,37 +22,37 @@ export class Sidebar extends Component {
                     <img src="/assets/logo.png" className="img-fluid mt-3 mb-5" alt="..." />
                     <ul className="navbar-nav sidenav">
                         <li className="nav-item">
-                            <a href="/admin/blogs" className="nav-link">
+                            <a href="/blogs" className="nav-link">
                                 <i className="fas fa-blog" />
                                 Blogs
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="/admin/portfolio" className="nav-link">
+                            <a href="/case-studies" className="nav-link">
                                 <i className="fas fa-box" />
-                                Portfolio
+                                Case Studies
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="/admin/statistics" className="nav-link">
+                            <a href="/statistics" className="nav-link">
                                 <i className="fas fa-chart-bar" />
                                 Statistics
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="/admin/testimonials" className="nav-link">
+                            <a href="/testimonials" className="nav-link">
                                 <i className="fas fa-users" />
                                 Testimonials
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="/admin/account" className="nav-link">
+                            <a href="/account" className="nav-link">
                                 <i className="fas fa-user-gear" />
                                 Admin Account
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a href="/admin/logout" className="nav-link" onClick={this.logout}>
+                            <a href="/logout" className="nav-link" onClick={this.logout}>
                                 <i className="fas fa-sign-out" />
                                 Logout
                             </a>
@@ -66,37 +66,37 @@ export class Sidebar extends Component {
                     <div className="offcanvas-body">
                         <ul className="navbar-nav sidenav">
                             <li className="nav-item">
-                                <a href="/admin/blogs" className="nav-link">
+                                <a href="/blogs" className="nav-link">
                                     <i className="fas fa-blog" />
                                     Blogs
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a href="/admin/portfolio" className="nav-link">
+                                <a href="/portfolio" className="nav-link">
                                     <i className="fas fa-box" />
-                                    Portfolio
+                                    Case Studies
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a href="/admin/statistics" className="nav-link">
+                                <a href="/statistics" className="nav-link">
                                     <i className="fas fa-chart-bar" />
                                     Statistics
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a href="/admin/testimonials" className="nav-link">
+                                <a href="/testimonials" className="nav-link">
                                     <i className="fas fa-users" />
                                     Testimonials
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a href="/admin/account" className="nav-link">
+                                <a href="/account" className="nav-link">
                                     <i className="fas fa-user-gear" />
                                     Admin Account
                                 </a>
                             </li>
                             <li className="nav-item">
-                                <a href="/admin/logout" className="nav-link" onClick={this.logout}>
+                                <a href="/logout" className="nav-link" onClick={this.logout}>
                                     <i className="fas fa-sign-out" />
                                     Logout
                                 </a>
