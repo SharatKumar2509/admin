@@ -9,6 +9,7 @@ import {
 
 import Blogs from './components/Blogs/Blogs';
 import Portfolio from './components/Portfolio/Portfolio';
+import Brands from './components/Brands/Brands';
 import Statistics from './components/Statistics/Statistics';
 import Testimonials from './components/Testimonials/Testimonials';
 import Account from './components/Account/Account';
@@ -47,6 +48,7 @@ export default class App extends Component {
 						<Route element={<ProtectedRoute />}>
 							<Route path="/blogs" element={<Blogs />} />
 							<Route path="/case-studies" element={<Portfolio />} />
+							<Route path="/brands" element={<Brands />} />
 							<Route path="/statistics" element={<Statistics />} />
 							<Route path="/testimonials" element={<Testimonials />} />
 							<Route path="/account" element={<Account />} />

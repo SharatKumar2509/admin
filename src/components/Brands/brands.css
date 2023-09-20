@@ -1,0 +1,65 @@
+.brands-table .btn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+    font-weight: 500;
+    padding: 6px 10px;
+    min-width: 80px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.brands-table .btn.btn-primary {
+    background-color: royalblue;
+    color: white;
+    border-color: royalblue;
+}
+
+.brands-table img {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
+    max-width: 720px;
+}
+
+.brands-table .h4 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    color: #6600FF;
+    text-transform: uppercase;
+}
+
+.brands-table p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    color: #333;
+    text-align: justify;
+}
+
+.brands-table .btn.btn-primary:hover,
+.brands-table .btn.btn-primary:focus {
+    background-color: #1c41b0;
+    border-color: #1c41b0;
+}
+
+.modal .form-label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9em;
+    font-weight: 700;
+    color: #454545;
+}
+
+.modal .form-control,
+.modal .form-select {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    color: #333;
+    border-radius: 0;
+    border-bottom: 2px solid #999;
+}
+
+.modal .btn {
+    padding: 6px 15px;
+    min-width: 100px;
+}

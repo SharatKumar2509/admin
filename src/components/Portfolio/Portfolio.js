@@ -15,6 +15,7 @@ export class Portfolio extends Component {
             portfolio: {},
             id: "",
             client: "",
+            benefits: "",
             introduction: "",
             requirement: "",
             challenge: "",
@@ -26,13 +27,12 @@ export class Portfolio extends Component {
             value1: "",
             value2: "",
             value3: "",
-            project_video: "",
             project_image_1: "",
             project_image_2: "",
             project_image_3: "",
             project_image_4: "",
             project_image_5: "",
-            bgcolor: "",
+            project_image_6: "",
             status: 0
         }
 
@@ -57,6 +57,7 @@ export class Portfolio extends Component {
             this.setState({ status: 1 });
             const formData = new FormData();
             formData.append("client", this.state.client);
+            formData.append("benefits", this.state.benefits);
             formData.append("introduction", this.state.introduction);
             formData.append("requirement", this.state.requirement);
             formData.append("challenge", this.state.challenge);
@@ -68,13 +69,12 @@ export class Portfolio extends Component {
             formData.append("value1", this.state.value1);
             formData.append("value2", this.state.value2);
             formData.append("value3", this.state.value3);
-            formData.append("project_video", this.state.project_video);
             formData.append("project_image_1", this.state.project_image_1);
             formData.append("project_image_2", this.state.project_image_2);
             formData.append("project_image_3", this.state.project_image_3);
             formData.append("project_image_4", this.state.project_image_4);
             formData.append("project_image_5", this.state.project_image_5);
-            formData.append("bgcolor", this.state.bgcolor);
+            formData.append("project_image_6", this.state.project_image_6);
             axios.post("https://www.overninja.com:8081/portfolio/add", formData)
                 .then(res => {
                     this.setState({ status: 0 });
@@ -94,6 +94,7 @@ export class Portfolio extends Component {
         this.setState({
             id: "",
             client: "",
+            benefits: "",
             introduction: "",
             requirement: "",
             challenge: "",
@@ -105,13 +106,12 @@ export class Portfolio extends Component {
             value1: "",
             value2: "",
             value3: "",
-            project_video: "",
             project_image_1: "",
             project_image_2: "",
             project_image_3: "",
             project_image_4: "",
             project_image_5: "",
-            bgcolor: "",
+            project_image_6: "",
             status: 0
         });
         this.addCloseBtn.current.click();
@@ -190,24 +190,28 @@ export class Portfolio extends Component {
                                     <input type="text" name="client" maxLength={100} className="form-control" required value={this.state.client} onChange={e => this.setState({ client: e.target.value })} />
                                 </div>
                                 <div className="mb-4">
+                                    <label className="form-label">Benefits</label>
+                                    <textarea name="benefits" rows={3} className="form-control" maxLength={1000} required value={this.state.benefits} onChange={e => this.setState({ benefits: e.target.value })}></textarea>
+                                </div>
+                                <div className="mb-4">
                                     <label className="form-label">Introduction</label>
-                                    <textarea name="introduction" rows={3} className="form-control" maxLength={2000} required value={this.state.introduction} onChange={e => this.setState({ introduction: e.target.value })}></textarea>
+                                    <textarea name="introduction" rows={3} className="form-control" maxLength={1000} required value={this.state.introduction} onChange={e => this.setState({ introduction: e.target.value })}></textarea>
                                 </div>
                                 <div className="mb-4">
                                     <label className="form-label">Client Requirement</label>
-                                    <textarea name="requirement" rows={3} className="form-control" maxLength={2000} required value={this.state.requirement} onChange={e => this.setState({ requirement: e.target.value })}></textarea>
+                                    <textarea name="requirement" rows={3} className="form-control" maxLength={1000} required value={this.state.requirement} onChange={e => this.setState({ requirement: e.target.value })}></textarea>
                                 </div>
                                 <div className="mb-4">
                                     <label className="form-label">The Challenge</label>
-                                    <textarea name="challenge" rows={3} className="form-control" maxLength={2000} required value={this.state.challenge} onChange={e => this.setState({ challenge: e.target.value })}></textarea>
+                                    <textarea name="challenge" rows={3} className="form-control" maxLength={1000} required value={this.state.challenge} onChange={e => this.setState({ challenge: e.target.value })}></textarea>
                                 </div>
                                 <div className="mb-4">
                                     <label className="form-label">The Process</label>
-                                    <textarea name="process" rows={3} className="form-control" maxLength={2000} required value={this.state.process} onChange={e => this.setState({ process: e.target.value })}></textarea>
+                                    <textarea name="process" rows={3} className="form-control" maxLength={1000} required value={this.state.process} onChange={e => this.setState({ process: e.target.value })}></textarea>
                                 </div>
                                 <div className="mb-4">
                                     <label className="form-label">The Results</label>
-                                    <textarea name="results" rows={3} className="form-control" maxLength={2000} required value={this.state.results} onChange={e => this.setState({ results: e.target.value })}></textarea>
+                                    <textarea name="results" rows={3} className="form-control" maxLength={1000} required value={this.state.results} onChange={e => this.setState({ results: e.target.value })}></textarea>
                                 </div>
                                 <div className="mb-4">
                                     <label className="form-label">Statistics</label>
@@ -235,10 +239,6 @@ export class Portfolio extends Component {
                                     </table>
                                 </div>
                                 <div className="mb-4">
-                                    <label className="form-label">Project Video</label>
-                                    <input type="file" accept=".mp4" name="project_video" className="form-control" required onChange={e => this.setState({ project_video: e.target.files[0] })} />
-                                </div>
-                                <div className="mb-4">
                                     <label className="form-label">Project Image 1</label>
                                     <input type="file" accept=".jpg,.jpeg,.png,.webp,.JPG,.JPEG,.PNG,.WEBP" name="project_image_1" className="form-control" required onChange={e => this.setState({ project_image_1: e.target.files[0] })} />
                                 </div>
@@ -257,6 +257,10 @@ export class Portfolio extends Component {
                                 <div className="mb-4">
                                     <label className="form-label">Project Image 5</label>
                                     <input type="file" accept=".jpg,.jpeg,.png,.webp,.JPG,.JPEG,.PNG,.WEBP" name="project_image_5" className="form-control" required onChange={e => this.setState({ project_image_5: e.target.files[0] })} />
+                                </div>
+                                <div className="mb-4">
+                                    <label className="form-label">Project Image 6</label>
+                                    <input type="file" accept=".jpg,.jpeg,.png,.webp,.JPG,.JPEG,.PNG,.WEBP" name="project_image_6" className="form-control" required onChange={e => this.setState({ project_image_6: e.target.files[0] })} />
                                 </div>
                             </div>
                             <div className="modal-footer">

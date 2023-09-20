@@ -34,6 +34,12 @@ export class Sidebar extends Component {
                             </a>
                         </li>
                         <li className="nav-item">
+                            <a href="/brands" className="nav-link">
+                                <i className="fas fa-ring" />
+                                Brands
+                            </a>
+                        </li>
+                        <li className="nav-item">
                             <a href="/statistics" className="nav-link">
                                 <i className="fas fa-chart-bar" />
                                 Statistics
@@ -75,6 +81,12 @@ export class Sidebar extends Component {
                                 <a href="/portfolio" className="nav-link">
                                     <i className="fas fa-box" />
                                     Case Studies
+                                </a>
+                            </li>
+                            <li className="nav-item">
+                                <a href="/brands" className="nav-link">
+                                    <i className="fas fa-ring" />
+                                    Brands
                                 </a>
                             </li>
                             <li className="nav-item">

@@ -12,7 +12,7 @@ export class Header extends Component {
                             (window.location.pathname === "/inquiry") ? "Inquiry"
                                 : (window.location.pathname === "/subscribers") ? "Subscribers"
                                     : (window.location.pathname === "/applications") ? "Job Applications"
-                                        : (window.location.pathname === "/posts") ? "Job Posts"
+                                        : (window.location.pathname === "/brands") ? "Brands"
                                             : (window.location.pathname === "/case-studies") ? "Case Studies"
                                                 : (window.location.pathname === "/blogs") ? "Blogs"
                                                     : (window.location.pathname === "/statistics") ? "Statistics"
